@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hola</h1>
+    <form>
+        <select  id="documentos">
+            <option value="1">DNI</option>
+            <option value="2">CE</option>
+            <option value="3">PAS</option>
+        </select>
+        <input type="text" name="ejemplo" id="ejemplo">
+        <input type="text">
+    </form>
+
+    <script src="main.js"></script>
+    <style>
+        input:focus {
+            outline: none; /* elimina el borde predeterminado */
+        }
+
+        input.custom-border:focus {
+            outline: 2px solid red; /* establece un borde personalizado */
+        }
+        .invalid{ 
+            border: solid 1px red !important; 
+        }
+        #ejem:focus.invalid{
+            border: solid 1px red;
+        }
+        
+    </style>
+</body>
+</html>
